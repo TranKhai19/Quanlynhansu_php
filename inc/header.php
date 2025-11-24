@@ -58,9 +58,9 @@ if (session_status() == PHP_SESSION_NONE) {
     <div class="nav-right">
         <?php if (isset($_SESSION['user'])): ?>
             <a href="#" style="background: none; pointer-events: none;">Xin chào, <?php echo htmlspecialchars($_SESSION['user']); ?></a>
-            <a href="../ui/logout.php" class="btn-logout">Đăng xuất</a>
+            <a href="../logout.php" class="btn-logout">Đăng xuất</a>
         <?php else: ?>
-            <a href="../ui/login.php" class="btn-login">Đăng nhập Admin</a>
+            <a href="../login.php" class="btn-login">Đăng nhập Admin</a>
         <?php endif; ?>
     </div>
 </div>

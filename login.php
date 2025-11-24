@@ -1,6 +1,6 @@
 <?php
 session_start(); // 1. Khởi động session ngay đầu file
-include '../ketnoi.php'; // 2. Kết nối CSDL
+include 'ketnoi.php'; // 2. Kết nối CSDL
 
 // Biến lưu thông báo lỗi
 $error_message = "";

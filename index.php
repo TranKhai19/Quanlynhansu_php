@@ -62,14 +62,14 @@ session_start(); // Khởi động session để biết ai đang truy cập
 <div class="navbar">
     <div class="nav-left">
         <a href="index.php">🏠 Trang chủ</a>
-        <a href="xemthongtinnv.php">Danh sách Nhân viên</a>
-        <a href="xemthongtinpb.php">Danh sách Phòng ban</a>
-        <a href="timkiem.php">🔍 Tìm kiếm</a>
+        <a href="./ui/xemthongtinnv.php">Danh sách Nhân viên</a>
+        <a href="./ui/xemthongtinpb.php">Danh sách Phòng ban</a>
+        <a href="./ui/timkiem.php">🔍 Tìm kiếm</a>
 
         <?php if (isset($_SESSION['user'])): ?>
-            <a href="chenthongtin.php">➕ Thêm NV</a>
-            <a href="form_capnhat.php">✏️ Cập nhật</a>
-            <a href="xoatatca.php">🗑️ Xóa tất cả</a>
+            <a href="./ui/chenthongtin.php">➕ Thêm NV</a>
+            <a href="./ui/form_capnhat.php">✏️ Cập nhật</a>
+            <a href="./ui/xoatatca.php">🗑️ Xóa tất cả</a>
         <?php endif; ?>
     </div>
 
