@@ -1,6 +1,6 @@
 <?php
 session_start(); // 1. Khởi động session ngay đầu file
-include 'ketnoi.php'; // 2. Kết nối CSDL
+include '../ketnoi.php'; // 2. Kết nối CSDL
 
 // Biến lưu thông báo lỗi
 $error_message = "";
@@ -27,7 +27,7 @@ if (isset($_POST['btn_login'])) {
         $_SESSION['user'] = $username;
         
         // Chuyển hướng sang trang quản trị (Ví dụ trang xem nhân viên)
-        header("Location: xemthongtinnv.php");
+        header("Location: index.php");
         exit();
     } else {
         $error_message = "Tên đăng nhập hoặc mật khẩu không đúng!";
