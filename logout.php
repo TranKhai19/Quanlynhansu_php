@@ -1,0 +1,6 @@
+<?php
+session_start();
+session_unset();    // Xóa các biến session
+session_destroy();  // Hủy phiên làm việc
+header("Location: login.php"); // Quay về trang đăng nhập
+?>
